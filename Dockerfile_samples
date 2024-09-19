@@ -292,7 +292,7 @@ CMD /start.sh
 -----------------------------------------------
    ## docker build -t maven:1 -f multistage.
 
-FROM maven:3.6-alpine as builder
+FROM maven:3.6-alpine AS builder
 COPY demo /app
 WORKDIR /app
 RUN mvn install
